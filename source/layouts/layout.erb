@@ -6,12 +6,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title %></title>
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/favicon.png' %>
+    <title>Dorian Somers - Portfolio - Master of none</title>
+    <%= stylesheet_link_tag "bundle" %>
   </head>
   <body>
     <%= yield %>
+    <%= javascript_include_tag "bundle" %>
   </body>
 </html>

@@ -1,0 +1,19 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap-variables";
+
+// External libraries
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Reveal
+@import "~reveal.js/css/reveal";
+@import "~reveal.js/css/theme/template/mixins";
+@import "~reveal.js/css/theme/template/settings";
+// Override here
+@import "~reveal.js/css/theme/template/theme";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";

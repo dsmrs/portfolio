@@ -1,15 +1,9 @@
----
-title: Le Wagon - Middleman
----
-
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="reveal">
+  <div class="slides">
+    <section id="home">
+    </section>
+    <% data.projects.each do |project| %>
+    <%= partial('layouts/project', locals: project) %>
+    <% end %>
   </div>
 </div>
