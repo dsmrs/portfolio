@@ -1,0 +1,43 @@
+  // // a.carousel-control-prev, a.carousel-control-next {
+  // //   position: absolute;
+  // // }
+  // // ol.carousel-indicators {
+  // //   display: flex;
+  // // }
+  // // .reveal section img {
+  // //   margin: 0;
+  // //   background: none;
+  // //   border: none;
+  // //   box-shadow: none;
+  // // }
+  // //
+  // .reveal img, .reveal video, .reveal iframe {
+  //   max-width: none;
+  //   max-height: none;
+  // }
+  // // .carousel-inner {
+  // //   margin: 40px !important;
+  // // }
+  .carousel, .carousel-inner, .carousel-item, .carousel-item.active {
+    height: 100%;
+    width: 100%;
+  }
+  // // .fill {
+  // //   height: 100%;
+  // //   width: 100%;
+  // //   background-position: center;
+  // // }
+  // //
+  // .carousel-item {
+  //   height: inherit;
+  //   width: 100%;
+  //   // img {
+  //   //   // width: auto;
+  //   // }
+  // }
+  .carousel {
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }

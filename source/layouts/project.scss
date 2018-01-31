@@ -1,0 +1,19 @@
+.show-project {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  .medias {
+    height: 100%;
+    flex-grow: 0;
+    flex-basis: 40%;
+    background-color: red;
+    // min-height:0;
+    // min-width:0;
+    // overflow: hidden;
+  }
+  .info {
+    background-color: green;
+    flex-grow: 1;
+    overflow-y: scroll;
+  }
+}

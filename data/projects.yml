@@ -1,7 +1,17 @@
 - title: 'Jungla - mobile app'
+  id: 'jungla'
   description: 'The best place in Medellin, Colombia'
   medias:
     - type: 'img'
-      url: ''
+      url: 'phone.png'
+    - type: 'img'
+      url: 'phone.png'
+    - type: 'img'
+      url: 'phone.png'
+
 - title: 'Soundbike - make parties more fun!'
+  id: 'soundbike'
   description: 'Pedal to pu the volume on'
+  medias:
+    - type: 'img'
+      url: 'phone.png'
