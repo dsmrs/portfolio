@@ -1,22 +1,26 @@
-<div id="<%= id %>" class="carousel slide" data-ride="carousel">
+<% if medias.size > 1 %>
+<div id="medias-<%= id %>" class="carousel slide" data-ride="carousel" data-interval="<% if medias.find { |e| e.type =~ /video/} %><%= 'false' %><% else %><%= '4000' %><% end %>" data-keyboard="false">
   <ol class="carousel-indicators">
-    <% medias.each_index do |media, index| %>
-      <li data-target="#<%= id %>" data-slide-to="<%= index %>" class="<%= index == 0 ? 'active' : ''  %>"></li>
+    <% medias.each_index do |index| %>
+      <li data-target="#<%= "#{id}-#{index}" %>" data-slide-to="<%= index %>" class="<%= index == 0 ? 'active' : ''  %>"></li>
     <% end %>
   </ol>
   <div class="carousel-inner">
      <% medias.each_with_index do |media, index| %>
        <div class="carousel-item <%= index == 0 ? 'active' : ''  %>">
-         <%= image_tag media.url, id: index %>
+         <%= partial("components/media", :locals => { media: media, id: id, index: index } )%>
        </div>
      <% end %>
   </div>
-  <a class="carousel-control-prev" href="#<%= id %>" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#medias-<%= id %>" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#<%= id %>" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#medias-<%= id %>" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
+<% else %>
+  <%= partial("components/media", :locals => { media: medias[0], id: id, index: 0 } )%>
+<% end %>

@@ -6,14 +6,24 @@
     height: 100%;
     flex-grow: 0;
     flex-basis: 40%;
-    background-color: red;
-    // min-height:0;
-    // min-width:0;
-    // overflow: hidden;
   }
   .info {
-    background-color: green;
     flex-grow: 1;
+    max-height: 100%;
+    padding: 60px;
+    text-align: left;
     overflow-y: scroll;
+  }
+}
+
+
+.tags > li {
+  font-family: $body-font-secondary;
+}
+
+ul.list-inline {
+  list-style-type: none;
+  li {
+    display: inline-block;
   }
 }

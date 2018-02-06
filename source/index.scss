@@ -6,3 +6,20 @@
 .monospace {
   font-family: $body-font-secondary !important;
 }
+
+.btn {
+  padding: 0.375rem 0.75rem !important;
+  margin: inherit;
+}
+.btn-primary {
+  color: white !important;
+}
+.btn-random {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  i {
+    color: $brand-primary;
+  }
+}

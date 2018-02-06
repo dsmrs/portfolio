@@ -1,5 +1,9 @@
 import Reveal from 'reveal.js';
-// import 'bootstrap';
+import $ from 'jquery';
+import 'bootstrap';
 
 console.log("coucou", Reveal);
-Reveal.initialize();
+Reveal.initialize({ transition: 'zoom' });
+const toggle = $('[data-toggle="tooltip"]');
+console.log(toggle);
+toggle.tooltip();

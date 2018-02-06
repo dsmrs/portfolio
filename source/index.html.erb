@@ -1,17 +1,20 @@
 <div class="reveal">
+  <button class="btn-random" name="button" data-toggle="tooltip" data-placement="bottom" title="Get a random skill/project">
+    <i class="fas fa-random"></i>
+  </button>
   <div class="slides">
-    <!-- <section id="home">
-        <h1 class="fragment fade-up" id=jack>
-          Jack of all trades
-        </H1>
-        <h1 class="master">
-          Master of none
-        </H1>
-        <h2 class="monospace">#portfolio #skills</h2>
-    </section> -->
+    <section id="home">
+      <h1 class="fragment fade-up" id=jack>
+        Jack of all trades
+      </H1>
+      <h1 class="master">
+        Master of none
+      </H1>
+      <h2 class="monospace">#portfolio #skills</h2>
+    </section>
 
     <% data.projects.each do |project| %>
-      <%= partial('layouts/project', locals: project) %>
+      <%= partial('layouts/project', locals: { project: project }) %>
     <% end %>
   </div>
 </div>

@@ -1,12 +1,22 @@
 <section>
   <div>
       <div class="show-project">
-        <div class="medias">
-          <%= partial('components/medias', locals: { medias: medias, id: id })%>
-        </div>
+        <% if project[:medias] && project[:medias].size > 0 %>
+          <div class="medias">
+            <%= partial('components/medias', locals: { medias: project[:medias], id: project[:id] })%>
+          </div>
+        <% end %>
+
         <div class="info">
-          <h2><%= title %></h2>
-          <p><%= description%></p>
+          <h2><%= project[:title] %></h2>
+          <% if project[:tags] && project[:tags].size > 0 %>
+            <ul class="list-inline tags">
+              <% project[:tags].each do |tag| %>
+                <li>#<%= tag%></li>
+              <% end %>
+            </ul>
+          <% end %>
+          <p><%= partial("projects/#{project[:id]}/index") %></p>
         </div>
       </div>
   </div>
