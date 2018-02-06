@@ -14,7 +14,7 @@ activate :external_pipeline,
 configure :development do
   activate :livereload
 end
-
+set :base_url, "/"
 set :css_dir, 'source/stylesheets'
 set :js_dir, 'source/javascripts'
 set :images_dir, 'images'
@@ -22,7 +22,9 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   # Enable cache buster (except for images)
+  activate :relative_assets
   activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/]
+  set :base_url, "/portfolio/"
 end
 
 activate :deploy do |deploy|
