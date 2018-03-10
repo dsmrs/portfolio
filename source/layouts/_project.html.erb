@@ -1,23 +1,24 @@
-<section>
-  <div>
-      <div class="show-project">
+<section id="slide-<%= "#{index+1}"%>">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+
         <% if project[:medias] && project[:medias].size > 0 %>
-          <div class="medias">
+          <div class="medias col-md-5 h-100">
             <%= partial('components/medias', locals: { medias: project[:medias], id: project[:id] })%>
           </div>
         <% end %>
 
-        <div class="info">
+        <div class="info  col-md-7">
           <h2><%= project[:title] %></h2>
           <% if project[:tags] && project[:tags].size > 0 %>
-            <ul class="list-inline tags">
-              <% project[:tags].each do |tag| %>
-                <li>#<%= tag%></li>
-              <% end %>
-            </ul>
+          <ul class="list-inline tags">
+            <% project[:tags].each do |tag| %>
+            <li>#<%= tag%></li>
+            <% end %>
+          </ul>
           <% end %>
           <p><%= partial("projects/#{project[:id]}/index") %></p>
         </div>
-      </div>
+    </div>
   </div>
 </section>

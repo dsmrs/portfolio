@@ -1,9 +1,6 @@
-<div class="reveal">
-  <button class="btn-random" name="button" data-toggle="tooltip" data-placement="bottom" title="Get a random skill/project">
-    <i class="fas fa-random"></i>
-  </button>
-  <div class="slides">
-    <section id="home">
+<div class="slides">
+  <section id="slide-0">
+    <div class="container text-center h-100 d-flex align-items-center flex-column justify-content-center">
       <h1 class="fragment fade-up" id=jack>
         Jack of all trades
       </H1>
@@ -13,8 +10,9 @@
       <h2 class="monospace">#portfolio #skills</h2>
     </section>
 
-    <% data.projects.each do |project| %>
-      <%= partial('layouts/project', locals: { project: project }) %>
-    <% end %>
-  </div>
+    </div>
+
+  <% data.projects.each_with_index do |project, index| %>
+  <%= partial('layouts/project', locals: { project: project, index: index }) %>
+  <% end %>
 </div>

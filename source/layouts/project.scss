@@ -1,21 +1,20 @@
-.show-project {
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
+// .show-project {
+//   height: 100vh;
+//   display: flex;
+//   align-items: stretch;
+//
+//   // overflow-y: scroll;
   .medias {
-    height: 100%;
-    flex-grow: 0;
+    // max-height: 100%;
+    // flex-grow: 0;
     flex-basis: 40%;
   }
   .info {
-    flex-grow: 1;
-    max-height: 100%;
+    // flex-grow: 1;
     padding: 60px;
     text-align: left;
-    overflow-y: scroll;
   }
-}
-
+// }
 
 .tags > li {
   font-family: $body-font-secondary;

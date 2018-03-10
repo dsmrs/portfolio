@@ -1,25 +1,7 @@
-a.carousel-control-prev, a.carousel-control-next {
-  position: absolute;
-}
-ol.carousel-indicators {
-  list-style-type: none;
-  display: flex;
-}
-.reveal section img {
-  margin: 0;
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
-.carousel, .carousel-inner, .carousel-item, .carousel-item.active {
-  height: 100%;
-  max-width: 100%;
-}
-
-.medias {
-  img {
-    max-height: 100%;
-    max-width: 100%;
-  }
+.carousel-inner .image {
+   height: 100%;
+   width: 100%;
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
 }

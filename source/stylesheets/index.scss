@@ -4,17 +4,18 @@
 
 // External libraries
 // Reveal
-@import "~reveal.js/css/reveal";
-@import "~reveal.js/css/theme/template/mixins";
-@import "~reveal.js/css/theme/template/settings";
-@import "config/reveal-variables";
-@import "~reveal.js/css/theme/template/theme";
+// @import "~reveal.js/css/reveal";
+// @import "~reveal.js/css/theme/template/mixins";
+// @import "~reveal.js/css/theme/template/settings";
+// @import "config/reveal-variables";
+// @import "~reveal.js/css/theme/template/theme";
 // Bootstrap
 @import "config/bootstrap-variables";
 @import "~bootstrap/scss/bootstrap";
 
 
 // Your CSS partials
+@import "slides";
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";

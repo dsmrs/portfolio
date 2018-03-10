@@ -12,6 +12,17 @@
     - type: 'img'
       url: 'phone.png'
 
+
+- title: 'Compressed earth block'
+  id: 'mudbrick'
+  tags:
+    - 'project'
+    - 'engineering'
+    - 'thesis'
+  medias:
+    - type: 'vimeo-video'
+      id: '90142901'
+
 - title: 'Soundbike'
   id: 'soundbike'
   tags:
@@ -42,70 +53,6 @@
     - type: 'img'
       url: 'woodcraft-6.jpg'
 
-- title: 'Drawings'
-  id: 'drawings'
-  tags:
-    - 'skill'
-    - 'art'
-    - 'hobby'
-  medias:
-    - type: 'img'
-      url: 'woodcraft-1.jpg'
-
-- title: 'Dance'
-  id: 'dance'
-  tags:
-    - 'skill'
-    - 'body'
-    - 'hobby'
-  medias:
-    - type: 'img'
-      url: 'dance-1.jpg'
-    - type: 'img'
-      url: 'dance-2.jpg'
-- title: 'Languages'
-  id: 'languages'
-  tags:
-    - 'skill'
-    - 'hobby'
-    - 'connection'
-- title: 'Photography'
-  id: 'photography'
-  tags:
-    - 'skill'
-    - 'hobby'
-    - 'art'
-  medias:
-    - type: 'img'
-      url: 'photography-1.jpg'
-    - type: 'img'
-      url: 'photography-2.jpg'
-    - type: 'img'
-      url: 'photography-3.jpg'
-- title: 'Video editing'
-  id: 'video'
-  tags:
-    - 'skill'
-    - 'hobby'
-    - 'holidays'
-  medias:
-    - type: 'vimeo-video'
-      id: '107456283'
-    - type: 'vimeo-video'
-      id: '196753813'
-    - type: 'vimeo-video'
-      id: '107378522'
-
-- title: 'Compressed earth block'
-  id: 'mudbrick'
-  tags:
-    - 'project'
-    - 'engineering'
-    - 'thesis'
-  medias:
-    - type: 'vimeo-video'
-      id: '90142901'
-
 - title: 'Coocook'
   id: 'coocook'
   tags:
@@ -123,3 +70,64 @@
       url: 'coocook-4.jpg'
     - type: 'img'
       url: 'coocook-5.jpg'
+
+- title: 'Languages'
+  id: 'languages'
+  tags:
+    - 'skill'
+    - 'hobby'
+    - 'connection'
+
+- title: 'Photography / Video editing'
+  id: 'photography'
+  tags:
+    - 'skill'
+    - 'hobby'
+    - 'art'
+    - 'holidays'
+  medias:
+    - type: 'img'
+      url: 'photography-1.jpg'
+    - type: 'img'
+      url: 'photography-2.jpg'
+    - type: 'img'
+      url: 'photography-3.jpg'
+    - type: 'vimeo-video'
+      id: '107456283'
+    - type: 'vimeo-video'
+      id: '196753813'
+    - type: 'vimeo-video'
+      id: '107378522'
+
+
+- title: 'Dance'
+  id: 'dance'
+  tags:
+    - 'skill'
+    - 'body'
+    - 'hobby'
+  medias:
+    - type: 'img'
+      url: 'dance-1.jpg'
+    - type: 'img'
+      url: 'dance-2.jpg'
+
+- title: 'Drawings'
+  id: 'drawings'
+  tags:
+    - 'skill'
+    - 'art'
+    - 'hobby'
+  medias:
+    - type: 'img'
+      url: 'drawings-1.png'
+    - type: 'img'
+      url: 'drawings-2.png'
+    - type: 'img'
+      url: 'drawings-3.png'
+    - type: 'img'
+      url: 'drawings-4.png'
+    # - type: 'img'
+    #   url: 'drawings-5.jpg'
+    # - type: 'img'
+    #   url: 'drawings-6.jpg'
