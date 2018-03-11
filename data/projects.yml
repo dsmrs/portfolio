@@ -6,11 +6,15 @@
     - 'mobileApp'
   medias:
     - type: 'img'
-      url: 'phone.png'
+      url: 'jungla-1.png'
     - type: 'img'
-      url: 'phone.png'
+      url: 'jungla-2.png'
     - type: 'img'
-      url: 'phone.png'
+      url: 'jungla-3.png'
+    - type: 'img'
+      url: 'jungla-4.png'
+    - type: 'img'
+      url: 'jungla-5.png'
 
 
 - title: 'Compressed earth block'
@@ -30,8 +34,10 @@
     - 'maker'
     - 'fun'
   medias:
+    - type: 'vimeo-video'
+      id: '259598023'
     - type: 'img'
-      url: 'phone.png'
+      url: 'soundbike-1.jpg'
 
 - title: 'Woodcraft letters'
   id: 'woodcraft'
