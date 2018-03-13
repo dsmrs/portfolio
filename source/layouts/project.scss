@@ -1,21 +1,37 @@
-// .show-project {
-//   height: 100vh;
-//   display: flex;
-//   align-items: stretch;
-//
-//   // overflow-y: scroll;
+.show-project {
+  height: 100%;
+  display: flex;
+  align-items: center;
   .medias {
-    // max-height: 100%;
-    // flex-grow: 0;
+    flex-basis: 40%;
+  }
+  > .image {
     flex-basis: 40%;
   }
   .info {
-    // flex-grow: 1;
+    flex-grow: 1;
     padding: 60px;
     text-align: left;
   }
-// }
+}
 
+@media (max-width: 768px) {
+  .show-project {
+    flex-direction: column-reverse;
+    .info {
+      margin-top: 70px;
+      padding: 0px;
+    }
+    > .medias {
+      min-height: 300px;
+      width: 100%;
+    }
+  }
+  .image {
+    min-height: 300px;
+    width: 100%;
+  }
+}
 .tags > li {
   font-family: $body-font-secondary;
 }

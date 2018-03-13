@@ -4,4 +4,5 @@ The goal was to find the best ratio of locals sand, earth, and gravel the make a
 
 I made 3 samples with or without stabilizer (lime) that I tested in a laboratory.
 
-<a class="btn btn-primary btn-lg" href="/projects/mudbrick/tfe-kuibaka.pdf#page=169"><i class="fas fa-file-pdf"></i> Thesis (in French, brick analysis pages 169-230)</a>
+<a class="btn btn-primary btn-lg" href="/projects/mudbrick/tfe-kuibaka.pdf#page=169"><i class="fas fa-file-pdf"></i> Thesis (in French)</a>
+(brick analysis pages 169-230)

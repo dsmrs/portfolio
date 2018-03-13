@@ -1,9 +1,13 @@
 
 <% if media.type == "img" %>
-  <div id="<%="#{id}-#{index}"%>" class="image" style="background-image: url(<%= image_path media.url %>)"></div>
+  <div id="<%="#{id}-#{index}"%>" class="image d-block w-100" style="background-image: url(<%= image_path media.url %>)"></div>
 
 <% elsif media.type == "facebook-video"%>
- <iframe src="https://www.facebook.com/plugins/video.php?href=<%= media.url %>&show_text=0&width=560" class="w-100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" id="<%= "#{id}-#{index}" %>"></iframe>
+  <div class="image d-flex align-items-center">
+    <iframe src="https://www.facebook.com/plugins/video.php?href=<%= media.url %>&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" class="d-block w-100  h-100" allowTransparency="true" allowFullScreen="true" id="<%= "#{id}-#{index}" %>"></iframe>
+  </div>
  <% elsif media.type == "vimeo-video" %>
- <iframe src="https://player.vimeo.com/video/<%= media.id %>" class="w-100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <div class="image d-flex align-items-center">
+     <iframe src="https://player.vimeo.com/video/<%= media.id %>" frameborder="0" class="d-block w-100 h-100" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </div>
 <% end %>

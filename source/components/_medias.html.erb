@@ -1,13 +1,13 @@
 <% if medias.size > 1 %>
-<div id="medias-<%= id %>" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="<% if medias.find { |e| e.type =~ /video/} %><%= 'false' %><% else %><%= '4000' %><% end %>" data-keyboard="false">
+<div id="medias-<%= id %>" class="carousel slide medias" data-ride="carousel" data-interval="<% if medias.find { |e| e.type =~ /video/} %><%= 'false' %><% else %><%= '4000' %><% end %>" data-keyboard="false">
   <ol class="carousel-indicators">
     <% medias.each_index do |index| %>
       <li data-target="#<%= "#{id}-#{index}" %>" data-slide-to="<%= index %>" class="<%= index == 0 ? 'active' : ''  %>"></li>
     <% end %>
   </ol>
-  <div class="carousel-inner w-100 h-100">
+  <div class="carousel-inner">
      <% medias.each_with_index do |media, index| %>
-       <div class="carousel-item w-100 h-100 <%= index == 0 ? 'active' : ''  %>">
+       <div class="carousel-item <%= index == 0 ? 'active' : ''  %>">
          <%= partial("components/media", :locals => { media: media, id: id, index: index } )%>
        </div>
      <% end %>

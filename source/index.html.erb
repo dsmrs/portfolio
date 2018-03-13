@@ -15,9 +15,9 @@
         <span>or</span>
         <%= inline_svg('mouse', class: 'mouse')%>
       </div>
-    </section>
 
     </div>
+  </section>
 
   <% data.projects.each_with_index do |project, index| %>
   <%= partial('layouts/project', locals: { project: project, index: index }) %>

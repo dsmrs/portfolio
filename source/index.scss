@@ -30,6 +30,9 @@
   .help {
     display: none;
   }
+  section:last-child {
+    margin-bottom: 100px !important;
+  }
 }
 
 #jack {
