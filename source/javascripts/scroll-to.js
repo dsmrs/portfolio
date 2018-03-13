@@ -142,5 +142,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.onkeydown  = preventDefaultForScrollKeys;
   }
 
-  disableScroll();
+  const viewWidth = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
+  console.log(viewWidth);
+  if (viewWidth > 768) {
+    disableScroll();
+  }
 });
