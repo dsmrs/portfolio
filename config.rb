@@ -1,3 +1,6 @@
+require "lib/image_helpers"
+helpers ImageHelpers
+
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
