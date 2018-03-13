@@ -1,26 +1,22 @@
 /*
-Error: Undefined variable: "$headers-font-secondary".
-        on line 39 of /Users/doriansomers/code/dsmrs/portfolio/source/index.scss
+Error: Undefined variable: "$brand-primary".
+        on line 10 of /Users/doriansomers/code/dsmrs/portfolio/source/components/nav.scss
 
-34:     margin-bottom: 100px !important;
-35:   }
-36: }
-37: 
-38: #jack {
-39:   font-family: $headers-font-secondary !important;
-40:   color: $brand-primary !important;
-41: }
-42: 
-43: .monospace {
-44:   font-family: $body-font-secondary !important;
+5:   height: 100vh;
+6:   width: 70px;
+7:   display: flex;
+8:   flex-direction: column;
+9:   justify-content: center;
+10:   background-color: $brand-primary;
+11:   color: white;
+12:   align-items: center;
+13: }
+14: 
+15: @media (max-width: 768px) {
 
 Backtrace:
-/Users/doriansomers/code/dsmrs/portfolio/source/index.scss:39
+/Users/doriansomers/code/dsmrs/portfolio/source/components/nav.scss:10
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `map'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `_perform'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -143,4 +139,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$headers-font-secondary\".\A         on line 39 of /Users/doriansomers/code/dsmrs/portfolio/source/index.scss\A \A 34:     margin-bottom: 100px !important;\A 35:   }\A 36: }\A 37: \A 38: #jack {\A 39:   font-family: $headers-font-secondary !important;\A 40:   color: $brand-primary !important;\A 41: }\A 42: \A 43: .monospace {\A 44:   font-family: $body-font-secondary !important;"; }
+  content: "Error: Undefined variable: \"$brand-primary\".\A         on line 10 of /Users/doriansomers/code/dsmrs/portfolio/source/components/nav.scss\A \A 5:   height: 100vh;\A 6:   width: 70px;\A 7:   display: flex;\A 8:   flex-direction: column;\A 9:   justify-content: center;\A 10:   background-color: $brand-primary;\A 11:   color: white;\A 12:   align-items: center;\A 13: }\A 14: \A 15: @media (max-width: 768px) {"; }

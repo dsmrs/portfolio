@@ -9,10 +9,26 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Dorian Somers - Portfolio - Master of none</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="source/stylesheets/bundle-477186f4.css" rel="stylesheet" />
+    <link href="source/stylesheets/bundle-aa52a4c4.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="slides">
+    <div class="nav">
+  <a href="/" class="btn btn-primary">
+    <i class="fa fa-home" aria-hidden="true"></i>
+  </a>
+  <button id="previous" type="button" class="btn btn-primary">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
+  <button id="next" type="button" class="btn btn-primary">
+    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+  </button>
+  <button id="random" type="button" class="btn btn-primary">
+      <i class="fa fa-random" aria-hidden="true"></i>
+  </button>
+</div>
+
+
+<div class="slides">
   <section id="slide-0">
     <div class="container text-center h-100 d-flex align-items-center flex-column justify-content-center">
       <h1 class="fragment fade-up" id=jack>
@@ -22,16 +38,23 @@
         Master of none
       </H1>
       <h2 class="monospace">#portfolio #skills</h2>
-    </section>
+      <div class="help">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewbox="0 0 100 125" enable-background="new 0 0 100 100" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="keys"><switch><foreignobject requiredextensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"></foreignobject><g i:extraneous="self"><path d="M57.795,24.285h-14.86c-1.93,0-3.5,1.57-3.5,3.5v14.86c0,1.93,1.57,3.5,3.5,3.5h14.86c1.93,0,3.5-1.57,3.5-3.5v-14.86    C61.295,25.855,59.725,24.285,57.795,24.285z M51.513,36.681h-2.295c-0.55,0-0.81-0.408-0.577-0.906l1.3-2.785    c0.233-0.499,0.614-0.499,0.847,0l1.301,2.786C52.322,36.273,52.062,36.681,51.513,36.681z"></path><path d="M57.795,70.312h-14.86c-1.93,0-3.5-1.57-3.5-3.5V51.953c0-1.93,1.57-3.5,3.5-3.5h14.86c1.93,0,3.5,1.57,3.5,3.5v14.859    C61.295,68.742,59.725,70.312,57.795,70.312z M42.935,49.453c-1.378,0-2.5,1.122-2.5,2.5v14.859c0,1.379,1.122,2.5,2.5,2.5h14.86    c1.379,0,2.5-1.121,2.5-2.5V51.953c0-1.379-1.121-2.5-2.5-2.5H42.935z"></path><path d="M51.513,57.917c0.55,0,0.81,0.408,0.577,0.906l-1.301,2.785c-0.233,0.498-0.614,0.498-0.847,0l-1.301-2.785    c-0.233-0.498,0.027-0.906,0.577-0.906H51.513z"></path><path d="M33.628,48.14h-14.86c-1.93,0-3.5,1.57-3.5,3.5V66.5c0,1.93,1.57,3.5,3.5,3.5h14.86c1.93,0,3.5-1.57,3.5-3.5V51.641    C37.128,49.71,35.558,48.14,33.628,48.14z M27.845,60.218c0,0.55-0.408,0.81-0.906,0.577l-2.785-1.302    c-0.499-0.232-0.499-0.613,0-0.846l2.785-1.302c0.499-0.232,0.906,0.027,0.906,0.577V60.218z"></path><path d="M81.962,48.14h-14.86c-1.93,0-3.5,1.57-3.5,3.5V66.5c0,1.93,1.57,3.5,3.5,3.5h14.86c1.93,0,3.5-1.57,3.5-3.5V51.641    C85.462,49.71,83.892,48.14,81.962,48.14z M76.576,59.492l-2.785,1.302c-0.498,0.232-0.906-0.027-0.906-0.577v-2.295    c0-0.55,0.408-0.81,0.906-0.577l2.785,1.302C77.074,58.879,77.074,59.26,76.576,59.492z"></path></g></switch></svg>
+
+        <span>or</span>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewbox="0 0 90 112.5" enable-background="new 0 0 90 90" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="mouse"><g><path d="M45.001,84.833c-13.73,0-24.901-11.17-24.901-24.899V30.067c0-13.73,11.17-24.9,24.901-24.9c13.73,0,24.9,11.17,24.9,24.9   v29.867C69.901,73.664,58.731,84.833,45.001,84.833z M45.001,10.167c-10.973,0-19.901,8.927-19.901,19.9v29.867   c0,10.973,8.928,19.899,19.901,19.899s19.9-8.927,19.9-19.899V30.067C64.901,19.094,55.974,10.167,45.001,10.167z M45.304,39.253   c-3.438,0-6.234-2.796-6.234-6.233v-7.467c0-3.437,2.796-6.233,6.234-6.233c3.437,0,6.234,2.796,6.234,6.233v7.467   C51.538,36.457,48.741,39.253,45.304,39.253z M45.304,24.32c-0.68,0-1.234,0.553-1.234,1.233v7.467c0,0.68,0.554,1.233,1.234,1.233   s1.234-0.553,1.234-1.233v-7.467C46.538,24.873,45.984,24.32,45.304,24.32z"></path></g></svg>
+
+      </div>
 
     </div>
+  </section>
 
   <section id="slide-1">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
-            <div id="medias-jungla" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="4000" data-keyboard="false">
+          <!-- <div class="medias"> -->
+            <div id="medias-jungla" class="carousel slide medias" data-ride="carousel" data-interval="4000" data-keyboard="false">
   <ol class="carousel-indicators">
       <li data-target="#jungla-0" data-slide-to="0" class="active"></li>
       <li data-target="#jungla-1" data-slide-to="1" class=""></li>
@@ -39,34 +62,34 @@
       <li data-target="#jungla-3" data-slide-to="3" class=""></li>
       <li data-target="#jungla-4" data-slide-to="4" class=""></li>
   </ol>
-  <div class="carousel-inner w-100 h-100">
-       <div class="carousel-item w-100 h-100 active">
+  <div class="carousel-inner">
+       <div class="carousel-item active">
          
-  <div id="jungla-0" class="image" style="background-image: url(images/jungla-1.png)"></div>
+  <div id="jungla-0" class="image d-block w-100" style="background-image: url(images/jungla-1.png)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="jungla-1" class="image" style="background-image: url(images/jungla-2.png)"></div>
+  <div id="jungla-1" class="image d-block w-100" style="background-image: url(images/jungla-2.png)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="jungla-2" class="image" style="background-image: url(images/jungla-3.png)"></div>
+  <div id="jungla-2" class="image d-block w-100" style="background-image: url(images/jungla-3.png)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="jungla-3" class="image" style="background-image: url(images/jungla-4.png)"></div>
+  <div id="jungla-3" class="image d-block w-100" style="background-image: url(images/jungla-4.png)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="jungla-4" class="image" style="background-image: url(images/jungla-5.png)"></div>
+  <div id="jungla-4" class="image d-block w-100" style="background-image: url(images/jungla-5.png)"></div>
 
 
        </div>
@@ -81,9 +104,9 @@
   </a>
 </div>
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Jungla</h2>
           <ul class="list-inline tags">
             <li>#project</li>
@@ -101,22 +124,24 @@
 <p><a class="btn btn-primary btn-lg" href="https://play.google.com/apps/testing/app.getjungla.com">App (alpha)</a></p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-2">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
+          <!-- <div class="medias"> -->
               
- <iframe src="https://player.vimeo.com/video/90142901" class="w-100 h-100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <div class="image d-flex align-items-center">
+     <iframe src="https://player.vimeo.com/video/90142901" frameborder="0" class="d-block w-100 h-100" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </div>
 
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Compressed earth block</h2>
           <ul class="list-inline tags">
             <li>#project</li>
@@ -129,32 +154,35 @@
 
 <p>I made 3 samples with or without stabilizer (lime) that I tested in a laboratory.</p>
 
-<p><a class="btn btn-primary btn-lg" href="/projects/mudbrick/tfe-kuibaka.pdf#page=169"><i class="fas fa-file-pdf"></i> Thesis (in French, brick analysis pages 169-230)</a></p>
+<p><a class="btn btn-primary btn-lg" href="/projects/mudbrick/tfe-kuibaka.pdf#page=169"><i class="fas fa-file-pdf"></i> Thesis (in French)</a>
+(brick analysis pages 169-230)</p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-3">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
-            <div id="medias-soundbike" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="false" data-keyboard="false">
+          <!-- <div class="medias"> -->
+            <div id="medias-soundbike" class="carousel slide medias" data-ride="carousel" data-interval="false" data-keyboard="false">
   <ol class="carousel-indicators">
       <li data-target="#soundbike-0" data-slide-to="0" class="active"></li>
       <li data-target="#soundbike-1" data-slide-to="1" class=""></li>
   </ol>
-  <div class="carousel-inner w-100 h-100">
-       <div class="carousel-item w-100 h-100 active">
+  <div class="carousel-inner">
+       <div class="carousel-item active">
          
- <iframe src="https://player.vimeo.com/video/259598023" class="w-100 h-100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <div class="image d-flex align-items-center">
+     <iframe src="https://player.vimeo.com/video/259598023" frameborder="0" class="d-block w-100 h-100" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </div>
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="soundbike-1" class="image" style="background-image: url(images/soundbike-1.jpg)"></div>
+  <div id="soundbike-1" class="image d-block w-100" style="background-image: url(images/soundbike-1.jpg)"></div>
 
 
        </div>
@@ -169,9 +197,9 @@
   </a>
 </div>
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Soundbike</h2>
           <ul class="list-inline tags">
             <li>#project</li>
@@ -187,16 +215,16 @@
 <p><a class="btn btn-primary btn-lg" href="http://www.mors.es/sound-bike/">Source code</a></p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-4">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
-            <div id="medias-woodcraft" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="4000" data-keyboard="false">
+          <!-- <div class="medias"> -->
+            <div id="medias-woodcraft" class="carousel slide medias" data-ride="carousel" data-interval="4000" data-keyboard="false">
   <ol class="carousel-indicators">
       <li data-target="#woodcraft-0" data-slide-to="0" class="active"></li>
       <li data-target="#woodcraft-1" data-slide-to="1" class=""></li>
@@ -205,40 +233,40 @@
       <li data-target="#woodcraft-4" data-slide-to="4" class=""></li>
       <li data-target="#woodcraft-5" data-slide-to="5" class=""></li>
   </ol>
-  <div class="carousel-inner w-100 h-100">
-       <div class="carousel-item w-100 h-100 active">
+  <div class="carousel-inner">
+       <div class="carousel-item active">
          
-  <div id="woodcraft-0" class="image" style="background-image: url(images/woodcraft-1.jpg)"></div>
+  <div id="woodcraft-0" class="image d-block w-100" style="background-image: url(images/woodcraft-1.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="woodcraft-1" class="image" style="background-image: url(images/woodcraft-2.jpg)"></div>
+  <div id="woodcraft-1" class="image d-block w-100" style="background-image: url(images/woodcraft-2.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="woodcraft-2" class="image" style="background-image: url(images/woodcraft-3.jpg)"></div>
+  <div id="woodcraft-2" class="image d-block w-100" style="background-image: url(images/woodcraft-3.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="woodcraft-3" class="image" style="background-image: url(images/woodcraft-4.jpg)"></div>
+  <div id="woodcraft-3" class="image d-block w-100" style="background-image: url(images/woodcraft-4.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="woodcraft-4" class="image" style="background-image: url(images/woodcraft-5.jpg)"></div>
+  <div id="woodcraft-4" class="image d-block w-100" style="background-image: url(images/woodcraft-5.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="woodcraft-5" class="image" style="background-image: url(images/woodcraft-6.jpg)"></div>
+  <div id="woodcraft-5" class="image d-block w-100" style="background-image: url(images/woodcraft-6.jpg)"></div>
 
 
        </div>
@@ -253,9 +281,9 @@
   </a>
 </div>
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Woodcraft letters</h2>
           <ul class="list-inline tags">
             <li>#project</li>
@@ -265,16 +293,16 @@
           <p><p>I co-organized a <a href="https://www.ted.com/tedx/events/6673">TEDx event in 2013</a> (in Louvain-la-Neuve) and I was in the scenography team. I handcrafted for it four big letters (the ones of TEDx) in wood and paint them.</p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-5">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
-            <div id="medias-coocook" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="4000" data-keyboard="false">
+          <!-- <div class="medias"> -->
+            <div id="medias-coocook" class="carousel slide medias" data-ride="carousel" data-interval="4000" data-keyboard="false">
   <ol class="carousel-indicators">
       <li data-target="#coocook-0" data-slide-to="0" class="active"></li>
       <li data-target="#coocook-1" data-slide-to="1" class=""></li>
@@ -282,34 +310,34 @@
       <li data-target="#coocook-3" data-slide-to="3" class=""></li>
       <li data-target="#coocook-4" data-slide-to="4" class=""></li>
   </ol>
-  <div class="carousel-inner w-100 h-100">
-       <div class="carousel-item w-100 h-100 active">
+  <div class="carousel-inner">
+       <div class="carousel-item active">
          
-  <div id="coocook-0" class="image" style="background-image: url(images/coocook-1.jpg)"></div>
+  <div id="coocook-0" class="image d-block w-100" style="background-image: url(images/coocook-1.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="coocook-1" class="image" style="background-image: url(images/coocook-2.jpg)"></div>
+  <div id="coocook-1" class="image d-block w-100" style="background-image: url(images/coocook-2.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="coocook-2" class="image" style="background-image: url(images/coocook-3.jpg)"></div>
+  <div id="coocook-2" class="image d-block w-100" style="background-image: url(images/coocook-3.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="coocook-3" class="image" style="background-image: url(images/coocook-4.jpg)"></div>
+  <div id="coocook-3" class="image d-block w-100" style="background-image: url(images/coocook-4.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="coocook-4" class="image" style="background-image: url(images/coocook-5.jpg)"></div>
+  <div id="coocook-4" class="image d-block w-100" style="background-image: url(images/coocook-5.jpg)"></div>
 
 
        </div>
@@ -324,9 +352,9 @@
   </a>
 </div>
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Coocook</h2>
           <ul class="list-inline tags">
             <li>#project</li>
@@ -338,16 +366,16 @@
 <p>The project has been abandoned but I still learned a lot from that experience, especially from the <em>lean startup method</em>.</p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-6">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Languages</h2>
           <ul class="list-inline tags">
             <li>#skill</li>
@@ -362,16 +390,16 @@
 one language per year.</p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-7">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
-            <div id="medias-photography" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="false" data-keyboard="false">
+          <!-- <div class="medias"> -->
+            <div id="medias-photography" class="carousel slide medias" data-ride="carousel" data-interval="false" data-keyboard="false">
   <ol class="carousel-indicators">
       <li data-target="#photography-0" data-slide-to="0" class="active"></li>
       <li data-target="#photography-1" data-slide-to="1" class=""></li>
@@ -380,38 +408,44 @@ one language per year.</p>
       <li data-target="#photography-4" data-slide-to="4" class=""></li>
       <li data-target="#photography-5" data-slide-to="5" class=""></li>
   </ol>
-  <div class="carousel-inner w-100 h-100">
-       <div class="carousel-item w-100 h-100 active">
+  <div class="carousel-inner">
+       <div class="carousel-item active">
          
-  <div id="photography-0" class="image" style="background-image: url(images/photography-1.jpg)"></div>
+  <div id="photography-0" class="image d-block w-100" style="background-image: url(images/photography-1.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="photography-1" class="image" style="background-image: url(images/photography-2.jpg)"></div>
+  <div id="photography-1" class="image d-block w-100" style="background-image: url(images/photography-2.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="photography-2" class="image" style="background-image: url(images/photography-3.jpg)"></div>
+  <div id="photography-2" class="image d-block w-100" style="background-image: url(images/photography-3.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
- <iframe src="https://player.vimeo.com/video/107456283" class="w-100 h-100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <div class="image d-flex align-items-center">
+     <iframe src="https://player.vimeo.com/video/107456283" frameborder="0" class="d-block w-100 h-100" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </div>
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
- <iframe src="https://player.vimeo.com/video/196753813" class="w-100 h-100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <div class="image d-flex align-items-center">
+     <iframe src="https://player.vimeo.com/video/196753813" frameborder="0" class="d-block w-100 h-100" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </div>
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
- <iframe src="https://player.vimeo.com/video/107378522" class="w-100 h-100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <div class="image d-flex align-items-center">
+     <iframe src="https://player.vimeo.com/video/107378522" frameborder="0" class="d-block w-100 h-100" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </div>
 
        </div>
   </div>
@@ -425,9 +459,9 @@ one language per year.</p>
   </a>
 </div>
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Photography / Video editing</h2>
           <ul class="list-inline tags">
             <li>#skill</li>
@@ -448,30 +482,30 @@ one language per year.</p>
 <p><a class="btn btn-primary btn-lg" href="https://vimeo.com/dmorses "><i class="fab fa-vimeo"></i> Vimeo</a></p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-8">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
-            <div id="medias-dance" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="4000" data-keyboard="false">
+          <!-- <div class="medias"> -->
+            <div id="medias-dance" class="carousel slide medias" data-ride="carousel" data-interval="4000" data-keyboard="false">
   <ol class="carousel-indicators">
       <li data-target="#dance-0" data-slide-to="0" class="active"></li>
       <li data-target="#dance-1" data-slide-to="1" class=""></li>
   </ol>
-  <div class="carousel-inner w-100 h-100">
-       <div class="carousel-item w-100 h-100 active">
+  <div class="carousel-inner">
+       <div class="carousel-item active">
          
-  <div id="dance-0" class="image" style="background-image: url(images/dance-1.jpg)"></div>
+  <div id="dance-0" class="image d-block w-100" style="background-image: url(images/dance-1.jpg)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="dance-1" class="image" style="background-image: url(images/dance-2.jpg)"></div>
+  <div id="dance-1" class="image d-block w-100" style="background-image: url(images/dance-2.jpg)"></div>
 
 
        </div>
@@ -486,9 +520,9 @@ one language per year.</p>
   </a>
 </div>
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Dance</h2>
           <ul class="list-inline tags">
             <li>#skill</li>
@@ -500,44 +534,44 @@ one language per year.</p>
 <p>In 2010 I decided to regain control of my body. First with a feeble start with <em>rock'n roll</em> and <em>salsa</em>. But in 2017, I discovered <em>forró</em> and I fell in love with that dance.</p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
   <section id="slide-9">
-  <div class="container h-100">
-    <div class="row align-items-center h-100">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
 
-          <div class="medias col-md-5 h-100">
-            <div id="medias-drawings" class="carousel slide w-100 h-100" data-ride="carousel" data-interval="4000" data-keyboard="false">
+          <!-- <div class="medias"> -->
+            <div id="medias-drawings" class="carousel slide medias" data-ride="carousel" data-interval="4000" data-keyboard="false">
   <ol class="carousel-indicators">
       <li data-target="#drawings-0" data-slide-to="0" class="active"></li>
       <li data-target="#drawings-1" data-slide-to="1" class=""></li>
       <li data-target="#drawings-2" data-slide-to="2" class=""></li>
       <li data-target="#drawings-3" data-slide-to="3" class=""></li>
   </ol>
-  <div class="carousel-inner w-100 h-100">
-       <div class="carousel-item w-100 h-100 active">
+  <div class="carousel-inner">
+       <div class="carousel-item active">
          
-  <div id="drawings-0" class="image" style="background-image: url(images/drawings-1.png)"></div>
+  <div id="drawings-0" class="image d-block w-100" style="background-image: url(images/drawings-1.png)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="drawings-1" class="image" style="background-image: url(images/drawings-2.png)"></div>
+  <div id="drawings-1" class="image d-block w-100" style="background-image: url(images/drawings-2.png)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="drawings-2" class="image" style="background-image: url(images/drawings-3.png)"></div>
+  <div id="drawings-2" class="image d-block w-100" style="background-image: url(images/drawings-3.png)"></div>
 
 
        </div>
-       <div class="carousel-item w-100 h-100 ">
+       <div class="carousel-item ">
          
-  <div id="drawings-3" class="image" style="background-image: url(images/drawings-4.png)"></div>
+  <div id="drawings-3" class="image d-block w-100" style="background-image: url(images/drawings-4.png)"></div>
 
 
        </div>
@@ -552,9 +586,9 @@ one language per year.</p>
   </a>
 </div>
 
-          </div>
+          <!-- </div> -->
 
-        <div class="info  col-md-7">
+        <div class="info">
           <h2>Drawings</h2>
           <ul class="list-inline tags">
             <li>#skill</li>
@@ -566,12 +600,12 @@ one language per year.</p>
 <p>Next, I would love to learn/try more about colors and other techniques.</p>
 </p>
         </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
 
 </div>
 
-    <script src="source/javascripts/bundle-3ec3b0ee.js"></script>
+    <script src="source/javascripts/bundle-ed5ab8a0.js"></script>
   </body>
 </html>

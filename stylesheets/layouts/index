@@ -1,10 +1,10 @@
 /*
 Error: Undefined variable: "$body-font-secondary".
-        on line 20 of /Users/doriansomers/code/dsmrs/portfolio/source/layouts/project.scss
+        on line 36 of /Users/doriansomers/code/dsmrs/portfolio/source/layouts/project.scss
         from line 1 of /Users/doriansomers/code/dsmrs/portfolio/source/stylesheets/layouts/index.scss
 
 Backtrace:
-/Users/doriansomers/code/dsmrs/portfolio/source/layouts/project.scss:20
+/Users/doriansomers/code/dsmrs/portfolio/source/layouts/project.scss:36
 /Users/doriansomers/code/dsmrs/portfolio/source/stylesheets/layouts/index.scss:1
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
@@ -142,4 +142,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body-font-secondary\".\A         on line 20 of /Users/doriansomers/code/dsmrs/portfolio/source/layouts/project.scss\A         from line 1 of /Users/doriansomers/code/dsmrs/portfolio/source/stylesheets/layouts/index.scss"; }
+  content: "Error: Undefined variable: \"$body-font-secondary\".\A         on line 36 of /Users/doriansomers/code/dsmrs/portfolio/source/layouts/project.scss\A         from line 1 of /Users/doriansomers/code/dsmrs/portfolio/source/stylesheets/layouts/index.scss"; }
