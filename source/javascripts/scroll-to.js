@@ -90,8 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // const attachHandler = (links, index) => {
-  //   const link = links.item(index);
   previousBtn.addEventListener("click", event => {
     event.preventDefault();
     goPrevious();
@@ -111,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let lastScroll = 0;
   const keys = {37: 2, 38: 2, 39: 1, 40: 1, 32:1};
 
-  function preventDefault(e) {
+  const preventDefault = (e) => {
     e = e || window.event;
     if (e.preventDefault)
         e.preventDefault();
@@ -126,14 +124,14 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScroll = e.timeStamp;
   }
 
-  function preventDefaultForScrollKeys(e) {
+  const preventDefaultForScrollKeys = (e) => {
       if (keys[e.keyCode]) {
           preventDefault(e);
           return false;
       }
   }
 
-  function disableScroll() {
+  const disableScroll = () => {
     if (window.addEventListener) // older FF
         window.addEventListener('DOMMouseScroll', preventDefault, false);
     window.onwheel = preventDefault; // modern standard
@@ -143,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const viewWidth = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
-  console.log(viewWidth);
   if (viewWidth > 768) {
     disableScroll();
   }

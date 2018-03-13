@@ -24,6 +24,14 @@
     - 'engineering'
     - 'thesis'
   medias:
+    - type: 'img'
+      url: 'brick-1.jpg'
+    - type: 'img'
+      url: 'brick-2.jpg'
+    - type: 'img'
+      url: 'brick-3.jpg'
+    - type: 'img'
+      url: 'brick-4.jpg'
     - type: 'vimeo-video'
       id: '90142901'
 
