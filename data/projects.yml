@@ -75,6 +75,26 @@
     - type: 'img'
       url: 'woodcraft-6.jpg'
 
+- title: 'Paper craft'
+  id: 'papercraft'
+  tags:
+    - 'project'
+    - 'handcraft'
+    - 'fun'
+  medias:
+    - type: 'img'
+      url: 'handcraft-1.jpg'
+    - type: 'img'
+      url: 'handcraft-2.jpg'
+    - type: 'img'
+      url: 'handcraft-3.jpg'
+    - type: 'img'
+      url: 'handcraft-4.jpg'
+    - type: 'img'
+      url: 'handcraft-5.jpg'
+    - type: 'img'
+      url: 'handcraft-6.jpg'
+
 - title: 'Coocook'
   id: 'coocook'
   tags:
@@ -149,7 +169,5 @@
       url: 'drawings-3.png'
     - type: 'img'
       url: 'drawings-4.png'
-    # - type: 'img'
-    #   url: 'drawings-5.jpg'
-    # - type: 'img'
-    #   url: 'drawings-6.jpg'
+    - type: 'img'
+      url: 'drawings-5.jpg'
