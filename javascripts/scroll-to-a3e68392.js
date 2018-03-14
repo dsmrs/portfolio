@@ -1,3 +1,5 @@
+import { setProgress } from './progress';
+
 document.addEventListener("DOMContentLoaded", () => {
   "use strict";
   let isRandom = false;
@@ -6,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const previousBtn = document.getElementById("previous");
   const nextBtn = document.getElementById("next");
   const randomBtn = document.getElementById("random");
+  const progressBar = document.getElementById('progress');
 
   const root = (() => {
     if ("scrollingElement" in document) return document.scrollingElement;
@@ -35,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollTo = (index) => {
     const coordinates = getCoordinates(`slide-${index}`);
     if (!coordinates) return;
-
+    setProgress(coordinates.get("start") + coordinates.get("delta"));
     const tick = timestamp => {
       progress.set("elapsed", timestamp - start);
       root.scrollTop = ease(...progress.values(), ...coordinates.values());
@@ -140,8 +143,28 @@ document.addEventListener("DOMContentLoaded", () => {
     document.onkeydown  = preventDefaultForScrollKeys;
   }
 
+  const progressScroll = (e) => {
+    if (e.timeStamp - lastScroll > 50) {
+      const closestSection = e.target.closest('section');
+      const matches = closestSection && closestSection.id.match(/slide\-(\d)/);
+      if (matches && matches[1]) {
+        currentIndex = parseInt(matches[1], 10);
+      }
+    }
+    lastScroll = e.timeStamp;
+    setProgress();
+  }
+
   const viewWidth = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
+  setProgress();
   if (viewWidth > 768) {
     disableScroll();
+  }
+  if (viewWidth <= 768) {
+    if (window.addEventListener) // older FF
+        window.addEventListener('DOMMouseScroll', progressScroll, false);
+    window.onwheel = progressScroll; // modern standard
+    window.onmousewheel = document.onmousewheel = progressScroll; // older browsers, IE
+    window.ontouchmove  = progressScroll; // mobile
   }
 });
