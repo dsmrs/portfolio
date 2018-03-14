@@ -45,6 +45,16 @@
     - type: 'img'
       url: 'soundbike-1.jpg'
 
+- title: 'OpenIdeas'
+  id: 'openideas'
+  tags:
+    - 'project'
+    - 'ideas'
+    - 'opensource'
+  medias:
+    - type: 'img'
+      url: 'openideas-1.png'
+
 - title: 'Woodcraft letters'
   id: 'woodcraft'
   tags:
