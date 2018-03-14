@@ -4,4 +4,4 @@ The guests at the party had to pedal on an exercise bike to put the volume on of
 
 Tech used: A bike speedometer, an [Arduino](https://www.arduino.cc) and AppleScript.
 
-<a class="btn btn-primary btn-lg" href="http://www.mors.es/sound-bike/">Source code</a>
+<a class="btn btn-primary btn-lg" href="http://www.mors.es/sound-bike/"><i class="fas fa-file-code"></i> Source code</a>

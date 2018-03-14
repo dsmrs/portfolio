@@ -1,4 +1,4 @@
-- title: 'Jungla'
+- title: '>_ code'
   id: 'jungla'
   tags:
     - 'project'
@@ -13,8 +13,6 @@
       url: 'jungla-3.png'
     - type: 'img'
       url: 'jungla-4.png'
-    - type: 'img'
-      url: 'jungla-5.png'
 
 
 - title: 'Compressed earth block'
