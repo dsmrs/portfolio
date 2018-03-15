@@ -3,9 +3,13 @@
   display: flex;
   align-items: center;
   .medias {
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: 50%;
   }
   > .image {
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: 50%;
   }
   .info {

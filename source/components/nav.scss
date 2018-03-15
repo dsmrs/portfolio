@@ -14,18 +14,18 @@
 }
 
 progress {
-  background-color: $orange;
+  background-color: rgba(255,255,255,0.7);
   position: fixed;
   border: none;
   top: 0px;
-  left: 70px;
+  left: 75px;
   width: 100vh;
   height: 5px;
   transform-origin: top left;
   transform: rotate(90deg);
 }
 progress::-webkit-progress-bar {
-  background-color: $orange;
+  background-color: rgba(255,255,255,0.7);
 }
 progress::-webkit-progress-value {
   transition: width 0.3s ease;
