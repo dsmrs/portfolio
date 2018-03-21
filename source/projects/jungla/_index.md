@@ -4,4 +4,4 @@ The technologies I used was [Ionic 3](http://ionicframework.com/), [Firebase](ht
 
 Jungla has been designed by [Caroline Tribut](http://atelierblick.com/)
 
-<a class="btn btn-primary btn-lg" href="https://play.google.com/apps/testing/app.getjungla.com"><i class="fab fa-android"></i> Jungla (alpha)</a>
+<a class="btn btn-primary btn-lg" target="_blank" href="https://play.google.com/apps/testing/app.getjungla.com"><i class="fab fa-android"></i> Jungla (alpha)</a>

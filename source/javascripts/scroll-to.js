@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   "use strict";
   let isRandom = false;
   const sections = document.querySelectorAll("section");
-  let currentIndex = 0;
+  const matchIndex = window.location.href.match(/slide-(\d)/);
+  let currentIndex = matchIndex ? parseInt(matchIndex[1], 10) : 0;
   const previousBtn = document.getElementById("previous");
   const nextBtn = document.getElementById("next");
   const randomBtn = document.getElementById("random");

@@ -2,4 +2,4 @@ In 2012, while I started my study in entrepreneurship, I started to write all my
 
 I'm convinced that the more you share an idea, the more it evolve for a better. In 2017, I push some ideas of my notebook online on a fake platform I called **OpenIdeas**. It's just a draft of what I would like to imagine to be the _Github of ideas_.
 
-<a class="btn btn-primary btn-lg" href="http://dorian.mors.es/open-ideas/"><i class="fas fa-lightbulb"></i> OpenIdeas (alpha)</a>
+<a class="btn btn-primary btn-lg" target="_blank" href="http://dorian.mors.es/open-ideas/"><i class="fas fa-lightbulb"></i> OpenIdeas (alpha)</a>

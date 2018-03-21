@@ -2,5 +2,5 @@ As an appendix of my master thesis made in 2013-2014, I made a consulting work t
 
 The goal was to find the best ratio of locals sand, earth, and gravel that'll make the strongest not-fired brick. After a strong analysis of the different materials, I made 3 samples with or without stabilizer (lime) that I tested in a laboratory.
 
-<a class="btn btn-primary btn-lg" href="/projects/mudbrick/tfe-kuibaka.pdf#page=169"><i class="fas fa-file-pdf"></i> Thesis (in French)</a>
+<a class="btn btn-primary btn-lg" target="_blank" href="/projects/mudbrick/tfe-kuibaka.pdf#page=169"><i class="fas fa-file-pdf"></i> Thesis (in French)</a>
 (brick analysis pages 169-230)
