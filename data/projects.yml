@@ -33,13 +33,16 @@
     - type: 'vimeo-video'
       id: '90142901'
 
-- title: 'Soundbike'
+- title: 'PlayerWood & Soundbike'
   id: 'soundbike'
   tags:
     - 'project'
     - 'maker'
+    - 'IoT'
     - 'fun'
   medias:
+    - type: 'img'
+      url: 'playerwood-1.jpg'
     - type: 'vimeo-video'
       id: '259598023'
     - type: 'img'
@@ -54,6 +57,12 @@
   medias:
     - type: 'img'
       url: 'openideas-1.png'
+
+- title: 'Blockchain'
+  id: 'blockchain'
+  tags:
+    - 'WIP'
+    - 'teaching_learning'
 
 - title: 'Woodcraft letters'
   id: 'woodcraft'
@@ -94,6 +103,10 @@
       url: 'handcraft-5.jpg'
     - type: 'img'
       url: 'handcraft-6.jpg'
+    - type: 'img'
+      url: 'handcraft-7.jpg'
+    - type: 'img'
+      url: 'handcraft-8.jpg'
 
 - title: 'Coocook'
   id: 'coocook'

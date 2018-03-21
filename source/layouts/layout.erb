@@ -9,6 +9,15 @@
     <meta name="description" content="Portfolio of Dorian Somers, marker and web developer">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Dorian Somers - Portfolio - Master of none</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= config.ga %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<%= config.ga %>');
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <%= stylesheet_link_tag "bundle" %>
   </head>

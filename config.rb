@@ -18,6 +18,7 @@ configure :development do
   activate :livereload
 end
 set :base_url, "/"
+set :ga, "UA-116133123-1"
 set :css_dir, 'source/stylesheets'
 set :js_dir, 'source/javascripts'
 set :images_dir, 'images'
