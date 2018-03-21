@@ -9,6 +9,15 @@
     <meta name="description" content="Portfolio of Dorian Somers, marker and web developer">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Dorian Somers - Portfolio - Master of none</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116133123-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116133123-1');
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="source/stylesheets/bundle-d89be851.css" rel="stylesheet" />
   </head>
@@ -207,9 +216,16 @@
   <ol class="carousel-indicators">
       <li data-target="#soundbike-0" data-slide-to="0" class="active"></li>
       <li data-target="#soundbike-1" data-slide-to="1" class=""></li>
+      <li data-target="#soundbike-2" data-slide-to="2" class=""></li>
   </ol>
   <div class="carousel-inner">
        <div class="carousel-item active">
+         
+  <div id="soundbike-0" class="image d-block w-100" style="background-image: url(images/playerwood-1.jpg)"></div>
+
+
+       </div>
+       <div class="carousel-item ">
          
    <div class="image d-flex align-items-center">
      <iframe src="https://player.vimeo.com/video/259598023" frameborder="0" class="d-block w-100 h-100" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -218,7 +234,7 @@
        </div>
        <div class="carousel-item ">
          
-  <div id="soundbike-1" class="image d-block w-100" style="background-image: url(images/soundbike-1.jpg)"></div>
+  <div id="soundbike-2" class="image d-block w-100" style="background-image: url(images/soundbike-1.jpg)"></div>
 
 
        </div>
@@ -236,19 +252,20 @@
           <!-- </div> -->
 
         <div class="info">
-          <h2>Soundbike</h2>
+          <h2>PlayerWood & Soundbike</h2>
           <ul class="list-inline tags">
             <li>#project</li>
             <li>#maker</li>
+            <li>#IoT</li>
             <li>#fun</li>
           </ul>
-          <p><p>A small project for a housewarming made in 2014 and updated with my new code skill in 2018.</p>
+          <p><p>Player Wood is a side and <em>work in progress</em> project to gain skills on IoT and electronics while making a pretty object. The idea is to build a mp3 player from a <em>Raspberry pi zero</em> and I would like to build a beautiful case in wood. The best would be to fake a screen behind the wood itself by making a part of it really thin with a <a href="https://shop.pimoroni.com/products/scroll-phat-hd">matrix of LEDs</a> behind.</p>
 
-<p>The guests at the party had to pedal on an exercise bike to put the volume on of the music. If they stop the volume start to decrease.</p>
+<p><a class="btn btn-primary btn-lg" href="https://github.com/dsmrs/player-wood"><i class="fab fa-github"></i> PlayerWood's Progress</a></p>
 
-<p>The tools I used was a exercise bike, a bike speedometer, an <a href="https://www.arduino.cc">Arduino</a> and some AppleScript on my MacBook to control the volume.</p>
+<p>Back in 2014 I made a small project for a housewarming. The guests at the party had to pedal on an exercise bike to put the volume on of the music. If they stop the volume start to decrease. The tools I used was a exercise bike, a bike speedometer, an <a href="https://www.arduino.cc">Arduino</a> and some AppleScript on my MacBook to control the volume.</p>
 
-<p><a class="btn btn-primary btn-lg" href="http://www.mors.es/sound-bike/"><i class="fas fa-file-code"></i> Source code</a></p>
+<p><a class="btn btn-primary btn-lg" href="http://www.mors.es/sound-bike/"><i class="fas fa-file-code"></i> Soundbike's source code</a></p>
 </p>
         </div>
     <!-- </div> -->
@@ -286,6 +303,28 @@
 </section>
 
   <section id="slide-5">
+  <div class="container show-project">
+    <!-- <div class="row align-items-center h-100"> -->
+
+
+        <div class="info">
+          <h2>Blockchain</h2>
+          <ul class="list-inline tags">
+            <li>#WIP</li>
+            <li>#teaching_learning</li>
+          </ul>
+          <p><p>By the end of 2016 I started to be curious about blockchain. Not by the cryptocurrencies, but more by the technology behind it and the potential of decentralized applications.</p>
+
+<p>Lately, I decided to learn about how to code Smart Contracts in <a href="https://en.wikipedia.org/wiki/Solidity">Solidity</a> and how to interact with a Ethereum node through <a href="https://github.com/ethereum/web3.js/">RPC/web3</a>. In the learning process what I love the most is to rapidly teach what I've learned so far. So I started to build a course to teach how to use Smart Contract in a blockchain, starting with a first Meetup.</p>
+
+<p><a class="btn btn-primary btn-lg" href="https://www.meetup.com/Le-Wagon-Lille-Coding-Station/events/248928372/"><i class="fab fa-meetup"></i> First lesson (in French)</a></p>
+</p>
+        </div>
+    <!-- </div> -->
+  </div>
+</section>
+
+  <section id="slide-6">
   <div class="container show-project">
     <!-- <div class="row align-items-center h-100"> -->
 
@@ -363,7 +402,7 @@
   </div>
 </section>
 
-  <section id="slide-6">
+  <section id="slide-7">
   <div class="container show-project">
     <!-- <div class="row align-items-center h-100"> -->
 
@@ -376,6 +415,8 @@
       <li data-target="#papercraft-3" data-slide-to="3" class=""></li>
       <li data-target="#papercraft-4" data-slide-to="4" class=""></li>
       <li data-target="#papercraft-5" data-slide-to="5" class=""></li>
+      <li data-target="#papercraft-6" data-slide-to="6" class=""></li>
+      <li data-target="#papercraft-7" data-slide-to="7" class=""></li>
   </ol>
   <div class="carousel-inner">
        <div class="carousel-item active">
@@ -414,6 +455,18 @@
 
 
        </div>
+       <div class="carousel-item ">
+         
+  <div id="papercraft-6" class="image d-block w-100" style="background-image: url(images/handcraft-7.jpg)"></div>
+
+
+       </div>
+       <div class="carousel-item ">
+         
+  <div id="papercraft-7" class="image d-block w-100" style="background-image: url(images/handcraft-8.jpg)"></div>
+
+
+       </div>
   </div>
   <a class="carousel-control-prev" href="#medias-papercraft" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -443,7 +496,7 @@
   </div>
 </section>
 
-  <section id="slide-7">
+  <section id="slide-8">
   <div class="container show-project">
     <!-- <div class="row align-items-center h-100"> -->
 
@@ -516,7 +569,7 @@
   </div>
 </section>
 
-  <section id="slide-8">
+  <section id="slide-9">
   <div class="container show-project">
     <!-- <div class="row align-items-center h-100"> -->
 
@@ -530,7 +583,7 @@
           </ul>
           <p><p>I used to be terrible in languages at school, I was learning English and Dutch at that time. But by traveling or just meeting people from others cultures, I rediscovered the power of languages.</p>
 
-<p>I've now developed my learning path to acquiring a new language the more efficiently and I speak now 4 languages:</p>
+<p>I've now developed my learning path to acquiring a new language the most efficiently and I speak now 4 languages:</p>
 
 <ul>
   <li>French</li>
@@ -546,7 +599,7 @@
   </div>
 </section>
 
-  <section id="slide-9">
+  <section id="slide-10">
   <div class="container show-project">
     <!-- <div class="row align-items-center h-100"> -->
 
@@ -636,7 +689,7 @@
   </div>
 </section>
 
-  <section id="slide-10">
+  <section id="slide-11">
   <div class="container show-project">
     <!-- <div class="row align-items-center h-100"> -->
 
@@ -688,7 +741,7 @@
   </div>
 </section>
 
-  <section id="slide-11">
+  <section id="slide-12">
   <div class="container show-project">
     <!-- <div class="row align-items-center h-100"> -->
 
