@@ -9,17 +9,38 @@
     <meta name="description" content="Portfolio of Dorian Somers, marker and web developer">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Dorian Somers - Portfolio - Master of none</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= config.ga %>"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '<%= config.ga %>');
-    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <%= stylesheet_link_tag "bundle" %>
+    <script src="https://www.googletagmanager.com/gtag/js?id=<%= config.ga %>"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '<%= config.ga %>');
+    </script>
+    <script type="text/javascript">
+      var utmRemoverRun = false;
+      function utmRemover() {
+      	if (!utmRemoverRun) { // only run once
+      	utmRemoverRun = true;
+      	var cleanSearch = window.location.search
+      		.replace(/utm_[^&]+&?/g, '') // removes utm_xxx parameters
+      		.replace(/&$/, '')  // removes & if last character
+      		.replace(/^\?$/, '')  // removes ? if only remaining character
+      		;
+      	// some pass utm_xxxx in the hash
+      	var cleanHash = window.location.hash
+      		.replace(/utm_[^&]+&?/g, '') // removes utm_xxx parameters
+      		.replace(/&$/, '')  // removes & if last character
+      		.replace(/^\#$/, '')  // removes # if only remaining character
+      		;
+      	window.history.replaceState({}, '', window.location.pathname + cleanSearch + cleanHash);
+      	}
+      };
+      setTimeout(utmRemover, 2000); // remove after 2 second
+      // These need to run after the pageview command
+      if (typeof ga !== 'undefined') ga(utmRemover);  // remove after normal Analytics has run
+    </script>
   </head>
   <body>
     <%= yield %>
